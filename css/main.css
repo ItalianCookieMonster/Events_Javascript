@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+/* STYLING */
+
+
+:root {
+    --color1: #ff6347;
+    /* Tomato red */
+    --color2: #32cd32;
+    /* Lime green, think of Luigi or pipes */
+    --color3: #4682b4;
+    /* Steel blue, think of Sonic */
+    --text-color: #ffffff;
+    /* White for clear readability */
+    --background-color: #000000;
+    /* Black for contrast */
+
+
+    --fs-small: 0.5rem;
+    --fs-regular: 0.75rem;
+    --fs-subtitle: 1.25rem;
+    --fs-sm-title: 1.875rem;
+    --fs-title: 2.19rem;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+}
+
+body {
+    font-family: "Press Start 2P", system-ui;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+
+
+
+.navbar {
+    background-color: var(--color3);
+    padding: 10px 0;
+    border-bottom: 3px solid var(--color1);
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li .nav-btn {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.navbar ul li .nav-btn:hover {
+    background-color: var(--color1);
+    color: var(--text-color);
+}
+
+
+h1 {
+    margin-block: 20px;
+    font-size: var(--fs-title);
+    font-weight: var(--fw-bold);
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+    min-height: 400px;
+}
+
+#game-container {
+    color: var(--text-color);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 3px solid var(--color2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
