@@ -1,4 +1,4 @@
-export function setUpKeyboardGameEvents(){
+export function setUpKeyboardGameEvents() {
     let letterDisplay = document.getElementById('letter-to-type');
     let scoreDisplay = document.getElementById('score');
     let score = 0;
@@ -13,10 +13,14 @@ export function setUpKeyboardGameEvents(){
         letterDisplay.textContent = randomLetter;
     }
 
-
-    /* apply to the document the even listener keydown and get the key 
-    that you press (event.key) convert it in upper case and check if it's equal to letterDisplay if it is add points to the score, update the score text in the html and update the game */
-
+    /* 
+    Aplica un event listener del tipo 'keydown' al documento.
+    Cuando se presiona una tecla, obtiene la tecla presionada (event.key), 
+    conviértela a mayúsculas y verifica si coincide con la letra mostrada 
+    (letterDisplay.textContent). 
+    Si la tecla coincide, suma puntos al marcador, actualiza el marcador en el HTML 
+    y llama a updateGame() para mostrar una nueva letra aleatoria.
+    */
 
     updateGame(); 
 }

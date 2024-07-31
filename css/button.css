@@ -1,0 +1,20 @@
+#click-button {
+    font-size: var(--fs-regular);
+    padding: 10px 20px;
+    background-color: var(--color1);
+    color: var(--text-color);
+    border: 2px solid var(--color2);
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#click-button:hover {
+    background-color: var(--color2);
+}
+
+#click-count,
+#timer {
+    font-size: var(--fs-subtitle);
+    margin-top: 10px;
+}
