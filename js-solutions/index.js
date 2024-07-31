@@ -3,6 +3,7 @@ import { setUpMouseGameEvents } from './mouse.js'
 import { setUpKeyboardGameEvents } from './keyboard.js';
 import { setUpFormGameEvents } from './form.js';
 import { setUpApiGameEvents } from './api.js';
+import { setUpButtonClickGameEvents } from './button.js';
 
 function showGame(gameType) {
     const mainContent = document.getElementById('main-content');
@@ -12,6 +13,13 @@ function showGame(gameType) {
     const gameContainer = document.createElement('div');
 
     switch (gameType) {
+        case 'button-click':
+            gameContainer.innerHTML = `<h2>Button Click Game</h2>
+                                        <p>Click the button as many times as you can in 10 seconds!</p>
+                                        <button id="click-button">Click Me!</button>
+                                        <p>Clicks: <span id="click-count">0</span></p>
+                                        <p id="timer">Time left: 10s</p>`;
+            break;
         case 'mouse':
             gameContainer.innerHTML = `<h2>Mouse Events Game</h2>
                                         <div id="game-container">
@@ -65,6 +73,9 @@ function showGame(gameType) {
 
 
     switch (gameType) {
+        case 'button-click':
+            setUpButtonClickGameEvents();
+            break;
         case 'mouse':
             setUpMouseGameEvents();
             break;
