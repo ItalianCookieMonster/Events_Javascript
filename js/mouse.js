@@ -1,5 +1,7 @@
 function setUpMouseGameEvents() {
 
+    
+
     /* 
     Primero, obtiene el elemento #game-container y añade un event listener 'mousemove'.
     Cuando se mueve el mouse, inicia el juego estableciendo el display de #start-message 
