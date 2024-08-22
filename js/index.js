@@ -3,7 +3,7 @@ import { setUpMouseGameEvents } from './mouse.js'
 import { setUpKeyboardGameEvents } from './keyboard.js';
 import { setUpFormGameEvents } from './form.js';
 import { setUpApiGameEvents } from '../js-solutions/api.js';
-import { setUpButtonClickGameEvents } from '../js-solutions/button.js';
+import { setUpButtonClickGameEvents } from './button.js';
 
 function showGame(gameType) {
     const mainContent = document.getElementById('main-content');

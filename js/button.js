@@ -10,6 +10,8 @@ export function setUpButtonClickGameEvents() {
     Tarea 1: Añade un event listener a 'clickButton' para aumentar 'clickCount'
     cada vez que se haga clic en el botón. Actualiza 'clickCountDisplay' con el nuevo conteo.
     */
+    
+    
 
     /* 
     Tarea 2: Inicia el juego y el temporizador en el primer clic del botón.

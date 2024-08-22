@@ -22,5 +22,8 @@ export function setUpKeyboardGameEvents() {
     y llama a updateGame() para mostrar una nueva letra aleatoria.
     */
 
+
+    
+
     updateGame(); 
 }
